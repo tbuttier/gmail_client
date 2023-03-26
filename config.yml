@@ -1,0 +1,8 @@
+#SCOPES : ['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/gmail.modify']
+SCOPES : ['https://mail.google.com/']
+output_dir: "./data"
+labels_ids: ['INBOX']      # Label Ids or empty list
+start_date: "2023/03/01"   # In format Year/Month/Day or empty string
+end_date: "2023/03/21"     # In format Year/Month/Day or empty string
+credentials.json: "C:/temp/credentials.json" #This file needs to exist and has to be downloaded from 
+token.json: "C:/temp/token.json" # This file is automatically created 
