@@ -226,7 +226,7 @@ class GmailClient:
 # save all messages from specific sender
 #---------------------------------------------------
  def save_all_messages_from_sender(self, sender):
-    emails=self.get_all_messages_from_sender(self, sender)
+    emails=self.get_all_messages_from_sender(sender)
 
     # Get the full email data for each email
     print(f"\nEmails from {sender}")
@@ -239,7 +239,7 @@ class GmailClient:
       headers = msg['payload']['headers']  
       i+=1    
       print(f"Saving message : {i}/{len(emails)}",end='\r')
-      self.save_email_to_disk(self,email_id,headers,dir_sender)    
+      self.save_email_to_disk(email_id,headers,dir_sender)    
     
 #---------------------------------------------------
 # delete all messages from specific sender
